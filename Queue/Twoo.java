@@ -1,3 +1,4 @@
+package Queue;
 import java.util.*;
 
 public class Twoo {
@@ -21,6 +22,8 @@ Twoo(int size){
 
         if(noe==size){
             System.out.println("queue is full");
+             
+            return ;
         }
 
        end=(end+1)%size;
@@ -39,13 +42,21 @@ Twoo(int size){
         int popped=arr[start];
        start=(start+1)%size;
        noe--;
-
+     
        return popped;
        }
 
        public int totalno(){
         return noe; 
        }
+
+       public void display() {
+        for (int wow : arr) {
+            System.out.print(wow + " ");
+
+        }
+    }
+
 
        public static void main(String[] args) {
 
@@ -57,27 +68,12 @@ Twoo(int size){
           obj.push(4);
           obj.push(5);
           obj.push(6);
-        
-        System.out.println("poped element: "+obj.pop());
-        System.out.println("poped element: "+obj.pop());
-        System.out.println("poped element: "+obj.pop());
-        System.out.println("poped element: "+obj.pop());
-        System.out.println("poped element: "+obj.pop());
-        System.out.println("poped element: "+obj.pop());
-
-        obj.push(7);
+         
+          System.out.println("pop elemennt: "+obj.pop());
           
           System.out.println(obj.totalno()+" :noe");
+
+          obj.display();
        }
        
        }
-
-      
-
-
-
-
-
-
-
-

@@ -80,11 +80,12 @@ public class rev {
         obj.push(4);
         obj.push(6);
        
+     
         obj.reverse();
-
-        obj.pop();
+        // obj.pop();
         
         obj.displayTop();
+       
         
         System.out.println("Size: " + obj.size());
     }
